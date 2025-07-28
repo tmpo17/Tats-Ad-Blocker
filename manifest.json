@@ -1,0 +1,24 @@
+{
+    "manifest_version": 3,
+    "name": "Tats' Ad Blocker",
+    "version": "1.0.0",
+    "description": "A simple ad blocker. ",
+    "icons": {
+        "16": "noads.webp",
+        "48": "noads.webp",
+        "128": "noads.webp"
+    },
+
+    "permissions": [
+        "declarativeNetRequest"
+    ],
+    "declarative_net_request": {
+        "rule_resources": [
+            {
+                "id": "ruleset_1",
+                "enabled": true,
+                "path": "rules.json"
+            }
+        ]
+    }
+}
